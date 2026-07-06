@@ -1,0 +1,112 @@
+{
+  "name": "cli-dock",
+  "displayName": "CLI Dock",
+  "description": "Launch CLI tools from VS Code editor title buttons.",
+  "version": "1.0.0",
+  "publisher": "oneo",
+  "license": "MIT",
+  "engines": {
+    "vscode": "^1.90.0"
+  },
+  "categories": [
+    "Other"
+  ],
+  "main": "./dist/extension.js",
+  "scripts": {
+    "vscode:prepublish": "pnpm run build",
+    "build": "tsc -p ./",
+    "watch": "tsc -watch -p ./",
+    "check": "tsc -p ./ --noEmit"
+  },
+  "contributes": {
+    "commands": [
+      {
+        "command": "cliDock.runLazygit",
+        "title": "Run lazygit",
+        "category": "CLI Dock",
+        "icon": "images/lazygit.svg"
+      },
+      {
+        "command": "cliDock.runOpencode",
+        "title": "Run opencode",
+        "category": "CLI Dock",
+        "icon": {
+          "light": "images/opencode-light.svg",
+          "dark": "images/opencode-dark.svg"
+        }
+      },
+      {
+        "command": "cliDock.runCodex",
+        "title": "Run codex",
+        "category": "CLI Dock",
+        "icon": "images/codex.svg"
+      },
+      {
+        "command": "cliDock.runClaude",
+        "title": "Run claude",
+        "category": "CLI Dock",
+        "icon": "images/claude.svg"
+      }
+    ],
+    "menus": {
+      "editor/title": [
+        {
+          "command": "cliDock.runLazygit",
+          "group": "navigation@100"
+        },
+        {
+          "command": "cliDock.runOpencode",
+          "group": "navigation@101"
+        },
+        {
+          "command": "cliDock.runCodex",
+          "group": "navigation@102"
+        },
+        {
+          "command": "cliDock.runClaude",
+          "group": "navigation@103"
+        }
+      ],
+      "commandPalette": [
+        {
+          "command": "cliDock.runLazygit"
+        },
+        {
+          "command": "cliDock.runOpencode"
+        },
+        {
+          "command": "cliDock.runCodex"
+        },
+        {
+          "command": "cliDock.runClaude"
+        }
+      ]
+    }
+  },
+  "devDependencies": {
+    "@types/node": "^20.19.0",
+    "@types/vscode": "1.90.0",
+    "typescript": "^5.8.0"
+  },
+  "author": {
+    "name": "ONEO",
+    "url": "https://github.com/oneo-me"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/oneo-me/cli-dock.git"
+  },
+  "bugs": {
+    "url": "https://github.com/oneo-me/cli-dock/issues"
+  },
+  "homepage": "https://github.com/oneo-me/cli-dock#readme",
+  "keywords": [
+    "cli",
+    "terminal",
+    "vscode",
+    "lazygit",
+    "opencode",
+    "codex",
+    "claude"
+  ]
+}
