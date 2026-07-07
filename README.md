@@ -2,6 +2,8 @@
 
 CLI Dock is a small VS Code extension that launches CLI tools from editor title buttons.
 
+![CLI Dock editor title buttons in VS Code](preview.jpg)
+
 ## Installation
 
 Install CLI Dock from the [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=oneo.cli-dock).
@@ -19,6 +21,10 @@ code --install-extension oneo.cli-dock
 ```
 
 The launched CLI tools must already be installed and available in your shell `PATH`.
+
+## Usage
+
+Open a file in VS Code and use the editor title buttons to run `lazygit`, `opencode`, `codex`, or `claude` in the current editor group. The same commands are also available from the Command Palette under the `CLI Dock` category.
 
 ## Features
 
