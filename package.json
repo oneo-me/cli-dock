@@ -2,7 +2,7 @@
   "name": "cli-dock",
   "displayName": "CLI Dock",
   "description": "Launch CLI tools from VS Code editor title buttons.",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "publisher": "oneo",
   "license": "MIT",
   "engines": {
@@ -24,7 +24,10 @@
         "command": "cliDock.runLazygit",
         "title": "Run lazygit",
         "category": "CLI Dock",
-        "icon": "images/lazygit.svg"
+        "icon": {
+          "light": "images/lazygit-light.svg",
+          "dark": "images/lazygit-dark.svg"
+        }
       },
       {
         "command": "cliDock.runOpencode",
