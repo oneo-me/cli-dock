@@ -24,19 +24,20 @@ The launched CLI tools must already be installed and available in your shell `PA
 
 ## Usage
 
-Open a file in VS Code and use the editor title buttons to run `lazygit`, `opencode`, `codex`, or `claude` in the current editor group. The same commands are also available from the Command Palette under the `CLI Dock` category.
+Open a file in VS Code and use the editor title buttons to run `lazygit`, `opencode`, `codex`, or `claude` in the current editor group. Use the GitHub button to open the current project's GitHub repository. The same commands are also available from the Command Palette under the `CLI Dock` category.
 
 ## Features
 
 - Adds editor title buttons for `lazygit`, `opencode`, `codex`, and `claude`.
 - Open an integrated terminal in the current editor group and run the selected command immediately.
+- Opens the current project's GitHub repository when a GitHub remote is available.
 - Uses bundled command icons for a compact native toolbar experience.
 
 ## Development
 
 ```bash
-pnpm install
-pnpm run build
+bun install
+bun run build
 ```
 
 Press F5 in VS Code and choose `Run Extension`.
@@ -44,7 +45,7 @@ Press F5 in VS Code and choose `Run Extension`.
 ## Publishing
 
 ```bash
-pnpm run build
-pnpm dlx @vscode/vsce package
-pnpm dlx @vscode/vsce publish
+bun run build
+bunx @vscode/vsce package
+bunx @vscode/vsce publish
 ```
