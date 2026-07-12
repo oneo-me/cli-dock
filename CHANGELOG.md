@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.3.0
+
+- Added a Run grok button that launches the `grok` command in the current editor group.
+
 ## 1.0.1
 
 - Added a GitHub repository button that opens the current project's GitHub remote.

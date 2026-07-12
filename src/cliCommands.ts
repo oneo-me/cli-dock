@@ -32,6 +32,11 @@ const FIXED_COMMANDS: FixedCommand[] = [
     id: "cliDock.runCursor",
     title: "cursor",
     command: "cursor-agent"
+  },
+  {
+    id: "cliDock.runGrok",
+    title: "grok",
+    command: "grok"
   }
 ];
 
