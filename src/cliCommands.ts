@@ -27,6 +27,11 @@ const FIXED_COMMANDS: FixedCommand[] = [
     id: "cliDock.runClaude",
     title: "claude",
     command: "claude"
+  },
+  {
+    id: "cliDock.runCursor",
+    title: "cursor",
+    command: "cursor-agent"
   }
 ];
 

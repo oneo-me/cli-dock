@@ -1,4 +1,8 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<path d="M14 15H2V1H14V15ZM5 4V12H11V4H5Z" fill="#17181C"/>
-<rect x="5" y="7" width="6" height="5" fill="#17181C" fill-opacity="0.1"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <title>opencode-light</title>
+    <g id="opencode-light" stroke="none" fill="none" fill-rule="evenodd">
+        <path d="M13,2 L13,14 L3,14 L3,2 L13,2 Z M11,4 L5,4 L5,12 L11,12 L11,4 Z" id="形状结合" fill="#17181C"></path>
+        <rect id="矩形-4" fill="#17181C" opacity="0.300000012" x="5" y="7" width="6" height="5"></rect>
+    </g>
 </svg>
