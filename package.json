@@ -2,7 +2,7 @@
   "name": "cli-dock",
   "displayName": "CLI Dock",
   "description": "Launch CLI tools from VS Code editor title buttons.",
-  "version": "1.1.0",
+  "version": "1.2.0",
   "publisher": "oneo",
   "license": "MIT",
   "engines": {
@@ -42,13 +42,28 @@
         "command": "cliDock.runCodex",
         "title": "Run codex",
         "category": "CLI Dock",
-        "icon": "images/codex.svg"
+        "icon": {
+          "light": "images/codex-light.svg",
+          "dark": "images/codex-dark.svg"
+        }
       },
       {
         "command": "cliDock.runClaude",
         "title": "Run claude",
         "category": "CLI Dock",
-        "icon": "images/claude.svg"
+        "icon": {
+          "light": "images/claude-light.svg",
+          "dark": "images/claude-dark.svg"
+        }
+      },
+      {
+        "command": "cliDock.runCursor",
+        "title": "Run cursor",
+        "category": "CLI Dock",
+        "icon": {
+          "light": "images/cursor-light.svg",
+          "dark": "images/cursor-dark.svg"
+        }
       },
       {
         "command": "cliDock.openGitHubRepository",
@@ -79,8 +94,12 @@
           "group": "navigation@103"
         },
         {
-          "command": "cliDock.openGitHubRepository",
+          "command": "cliDock.runCursor",
           "group": "navigation@104"
+        },
+        {
+          "command": "cliDock.openGitHubRepository",
+          "group": "navigation@105"
         }
       ],
       "commandPalette": [
@@ -95,6 +114,9 @@
         },
         {
           "command": "cliDock.runClaude"
+        },
+        {
+          "command": "cliDock.runCursor"
         },
         {
           "command": "cliDock.openGitHubRepository"
@@ -126,7 +148,8 @@
     "lazygit",
     "opencode",
     "codex",
-    "claude"
+    "claude",
+    "cursor"
   ],
   "packageManager": "bun@1.3.14"
 }
