@@ -14,6 +14,11 @@ const FIXED_COMMANDS: FixedCommand[] = [
     command: "lazygit"
   },
   {
+    id: "cliDock.runPi",
+    title: "pi",
+    command: "pi"
+  },
+  {
     id: "cliDock.runOpencode",
     title: "opencode",
     command: "opencode"

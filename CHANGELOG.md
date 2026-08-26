@@ -1,5 +1,9 @@
 # Changelog
 
+## 1.4.0
+
+- Added a Run pi button that launches the `pi` command in the current editor group.
+
 ## 1.3.0
 
 - Added a Run grok button that launches the `grok` command in the current editor group.

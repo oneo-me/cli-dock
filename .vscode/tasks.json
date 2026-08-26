@@ -3,14 +3,8 @@
   "tasks": [
     {
       "label": "build",
-      "type": "shell",
-      "command": "bun",
-      "args": [
-        "run",
-        "build"
-      ],
-      "group": "build",
-      "problemMatcher": "$tsc"
+      "type": "npm",
+      "script": "build"
     }
   ]
 }
