@@ -4,6 +4,6 @@ node_modules/**
 *.vsix
 .DS_Store
 .gitignore
-pnpm-lock.yaml
+bun.lock
 tsconfig.json
 dist/**/*.map

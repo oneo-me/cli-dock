@@ -36,8 +36,8 @@ Open a file in VS Code and use the editor title buttons to run `lazygit`, `pi`, 
 ## Development
 
 ```bash
-pnpm install
-pnpm run build
+bun install
+bun run build
 ```
 
 Press F5 in VS Code and choose `Run Extension`.
@@ -45,7 +45,7 @@ Press F5 in VS Code and choose `Run Extension`.
 ## Publishing
 
 ```bash
-pnpm run build
-pnpm dlx @vscode/vsce package
-pnpm dlx @vscode/vsce publish
+bun run build
+bunx @vscode/vsce package --no-dependencies
+bunx @vscode/vsce publish --no-dependencies
 ```
